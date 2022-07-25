@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: 'Heebo', sans-serif;
-    min-height: 3000px;
     padding-top: 80px;
 }
 
@@ -64,6 +63,10 @@ header nav ul li a {
     letter-spacing: 0.37px;
     margin-right: 24px;
     text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #3E50E5;
 }
 
 header nav ul li:last-of-type a {
@@ -131,6 +134,13 @@ section.hero img {
     text-align: center;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    color: #3E50E5;
+    background-color: #FFF;
+    border: 1px solid #3E50E5;
 }
 
 section.best-sellers {
@@ -173,7 +183,9 @@ section.best-sellers .product-slider .product {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
+
 
 section.best-sellers .product-slider .product img {
     max-width: 100%;
@@ -252,7 +264,15 @@ section.best-sellers .product-slider .product .product-info button {
     font-weight: 700;
     letter-spacing: 0.4px;
     line-height: 24px;
+    cursor: pointer;
 }
+
+section.best-sellers .product-slider .product:hover .product-info button {
+    background-color: #3E50E5;
+    border: 1px solid #3E50E5;
+    color: white;
+}
+
 
 section.newsletter {
     background-color: rgba(200, 200, 200, 0.18);
@@ -292,6 +312,7 @@ section.newsletter form input {
     box-sizing: border-box;
     border-radius: 60px 0 0 60px;
     border: 1px solid #3E3E3E;
+    border-right: none;
     color: #3E3E3E;
     font-family: Heebo;
     font-size: 14px;
@@ -313,4 +334,65 @@ section.newsletter form button {
     letter-spacing: 0.35px;
     line-height: 21px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.newsletter form button:hover {
+    background-color: #FFF;
+    border: 1px solid #3E3E3E;
+    color: #3E50E5;
+}
+
+
+footer .bottom-nav {
+    padding: 60px 0;
+    background-color: #3E3E3E;
+}
+
+footer .bottom-nav .container {
+    max-width: 955px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom-nav ul {
+    list-style: none;
+}
+
+
+footer .bottom-nav ul li a {
+    color: #E0E0E0;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+footer .bottom-nav ul li a:hover {
+    color: #3E50E5;
+}
+
+footer .bottom-nav ul li.list-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+footer .copyright-text {
+    color: white;
+    background-color: #2B2B2B;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
 }
